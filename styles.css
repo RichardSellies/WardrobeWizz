@@ -26,6 +26,7 @@
     color: var(--whites);
     font-size: 1em;
     background-color:  var(--blacks);
+    overflow-x: hidden
   }
 
   h1{
@@ -108,6 +109,9 @@ transition: all 250ms;
 
 /* Special code */
 
+.imgSpacer{
+
+}
 
 .backgroundWhite{
   background-color: var(--whites);
@@ -116,7 +120,8 @@ transition: all 250ms;
 
 .lastWeekStyle{
   background-color: var(--whites);
-  display: flex;
+
+
 }
 
 
@@ -394,6 +399,7 @@ Menu Item */
    margin: -47px 0 0 -100vw;
    padding: 50px;
    padding-top: 125px;
+   height: 100vh;
 
    background: var(--blacks);
    list-style-type: none;
