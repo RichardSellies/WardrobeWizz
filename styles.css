@@ -11,7 +11,7 @@
     --blacks: #1F2421;
     --purples: #BBC7FC;
     --whites: #F6FAF9;
-    --goldes: #FFC570;
+    --goldes: #FCDEBB;
   }
   
   /* font-family: 'Aleo', serif;
@@ -36,12 +36,28 @@
   }
 
   h2{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Aleo', serif;
+    font-size: 1.8em;
     color: var(--blacks);
-    font-weight: 800;
-    font-size: 1.4em;
+    font-weight: 400;
     z-index: 10;
+  
   }
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  color: var(--goldes);
+  font-weight: 200;
+  font-style: italic;
+}
+
+h4{
+  font-family: 'Aleo', serif;
+  font-size: 1.8em;
+  color: var(--blacks);
+  font-weight: 400;
+}
 
 .intro{
     background-color: var(--whites);
@@ -57,12 +73,62 @@ nav{
     background-color: var(--whites);
 }
 
-/* Special code */
-
-.helloCopy{
-    line-height: 1.5;
+footer{
+  height: 400px;
+  width: 100%;
+  background-color: var(--whites);
 }
 
+
+
+
+
+/* btns */
+.mainBtn{
+  font-family: 'Raleway', sans-serif;
+background-color: var(--purples);
+padding: 16px 80px;
+border-radius: 100px;
+color: var(--blacks);
+font-size: 1.2em;
+font-weight: 200;
+border-color: none;
+border-width: 0;
+transition: all 250ms;
+}
+
+.mainBtn:hover{
+ cursor: pointer;
+  background-color: var(--goldes);
+
+}
+
+
+
+
+/* Special code */
+
+
+.backgroundWhite{
+  background-color: var(--whites);
+}
+
+.lastWeekStyle{
+  background-color: var(--whites);
+  display: flex;
+}
+
+
+.helloCopy{
+    line-height: 2;
+}
+
+.headingUnderline{
+  background-color: var(--whites);
+  margin: 0 30%;
+  border-bottom: 2px solid var(--goldes);
+  padding-top: 20px;
+}
 .italicstyle{
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
@@ -79,6 +145,13 @@ nav{
     padding: 20px;
 }
 
+.contentStart{
+  padding: 40px 80px;
+  font-size: 1.8em;
+  font-weight: 200;
+  line-height: 1.8;
+  text-align: left;
+}
 
 
 
@@ -97,9 +170,84 @@ nav{
 
 
 
+.spacerBlack{
+  position: relative;
+  top: 40px;
+  width: 120vw;
+  transform: translate(-10vw, 0);
+  height: 100px;
+  border-radius: 0px 0px 100% 100%;
+  background-color: var(--blacks);
+  box-shadow: 0 3px 5px 0px rgba(0,0,0,0.4);
+
+}
 
 
 
+.weatherIcon{
+  background-color: var(--whites);
+}
+
+
+.lineInput{
+  outline:none;
+  background-color: var(--blacks);
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom: 1px solid var(--purples);
+  padding-bottom:5px;
+  color: var(--whites);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+
+
+ 
+
+  
+}
+
+span[contenteditable]:empty:focus::before,
+span[contenteditable]:empty::before{
+content: '----------';
+color: var(--blacks);
+}
+div[contenteditable]:empty:focus::before, div[contenteditable]:empty::before {
+content: 'Write something in div';
+}
+
+.lineInput:focus{
+  outline:none;
+  border-bottom:1px solid var(--goldes);
+  transition: all 0.3s ease-in;
+}
+
+.lineInput:before{
+  border-bottom: 0px solid var(--purples);
+
+}
+
+
+.lineInput2{
+  border-bottom: 1px solid var(--purples);
+}
+
+
+
+
+
+
+
+/* Padding and Margin */
+
+.topPadding40{
+  padding-top: 40px;
+}
+
+.topPadding100{
+  padding: 100px;
+}
 
 
 
