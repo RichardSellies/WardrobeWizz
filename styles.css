@@ -113,6 +113,7 @@ transition: all 250ms;
   background-color: var(--whites);
 }
 
+
 .lastWeekStyle{
   background-color: var(--whites);
   display: flex;
