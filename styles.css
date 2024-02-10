@@ -75,14 +75,39 @@ nav{
 }
 
 footer{
-  height: 400px;
   width: 100%;
+  bottom: -5px;
+  position: fixed;
+  z-index: 2;
+  margin: 0px;
+}
+
+footer img{
+  width: 100%;
+  margin: 0px;
+  
+}
+
+.footerContent{
+
+
+padding-top: 50px;
+padding-bottom: 100px;
   background-color: var(--whites);
 }
 
+.footerContent img{
+  width: 100%;
 
+  padding-right: 40px;
+  
+}
 
-
+.paddingLeftRight{
+  background-color: var(--whites);
+  padding-right: 40px;
+  padding-left: 40px;
+}
 
 /* btns */
 .mainBtn{
@@ -107,21 +132,65 @@ transition: all 250ms;
 
 
 
+/* input */
+
+
+
+.cursor {
+  display: inline-block;
+  background-color: var(--purples);
+  width: 0.15rem;
+  height: 1.8rem;
+
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      background-color: transparent;
+  }
+  50% {
+      background-color: var(--purples);
+  }
+}
+
 /* Special code */
 
-.imgSpacer{
 
+
+.imgSpacer img{
+  width: 40%;
+  padding: .5em;
+  border-radius: 20px;
+
+
+}
+
+.wider img{
+  width: 88%;
+  padding-top: 60px;
 }
 
 .backgroundWhite{
   background-color: var(--whites);
 }
 
+.backgroundBlack{
+  background-color: var(--blacks);
+  color: var(--purples)
+}
+
 
 .lastWeekStyle{
-  background-color: var(--whites);
+background-color: var(--whites);
+padding-top: 40px;
+padding-bottom: 80px;
 
+}
 
+.inspired{
+background-color: var(--blacks);
+padding-bottom: 80px;
 }
 
 
@@ -130,10 +199,10 @@ transition: all 250ms;
 }
 
 .headingUnderline{
-  background-color: var(--whites);
   margin: 0 30%;
   border-bottom: 2px solid var(--goldes);
   padding-top: 20px;
+
 }
 .italicstyle{
     font-family: 'Raleway', sans-serif;
@@ -190,6 +259,29 @@ transition: all 250ms;
 
 
 
+.spacerBlackflip{
+  position: relative;
+  top: -40px;
+  width: 120vw;
+  transform: translate(-10vw, 0);
+  height: 100px;
+  border-radius: 100% 100% 0px 0px;
+  background-color: var(--blacks);
+  box-shadow: 0 -7px 5px -7px rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.spacerBlackFooter{
+  position: relative;
+  width: 120vw;
+  transform: translate(-15vw, 0);
+  height: 100px;
+  border-radius: 0px 0px 100% 100%;
+  background-color: var(--blacks);
+  box-shadow: 0 3px 5px 0px rgba(0,0,0,0.4);
+  
+}
+
 .weatherIcon{
   background-color: var(--whites);
 }
@@ -207,8 +299,8 @@ transition: all 250ms;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   font-weight: 200;
-
-
+  cursor: pointer;
+  margin-right:7px;
  
 
   
@@ -235,9 +327,6 @@ content: 'Write something in div';
 }
 
 
-.lineInput2{
-  border-bottom: 1px solid var(--purples);
-}
 
 
 
@@ -252,7 +341,7 @@ content: 'Write something in div';
 }
 
 .topPadding100{
-  padding: 100px;
+  padding-top: 100px;
 }
 
 
