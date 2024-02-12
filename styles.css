@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
+*, body, html{
     padding: 0;
     margin: 0;
+
 }
 
 
@@ -20,15 +21,21 @@
 
 /* Universal code */
   body{
+    position: relative;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: var(--whites);
     font-size: 1em;
     background-color:  var(--blacks);
-    overflow-x: hidden
-  }
+    overflow-x: hidden;
 
+
+  }
+html{
+
+  overflow-x: hidden;
+}
   h1{
     font-family: 'Aleo', serif;
     color: var(--purples);
@@ -75,7 +82,7 @@ nav{
 }
 
 footer{
-  width: 100%;
+
   bottom: -5px;
   position: fixed;
   z-index: 2;
@@ -378,6 +385,7 @@ Menu Item */
    right: 0px;
    z-index: 1;
 
+
    
    -webkit-user-select: none;
    user-select: none;
@@ -488,7 +496,7 @@ Menu Item */
    margin: -47px 0 0 -100vw;
    padding: 50px;
    padding-top: 125px;
-   height: 100vh;
+   min-height: 100vh;
 
    background: var(--blacks);
    list-style-type: none;
